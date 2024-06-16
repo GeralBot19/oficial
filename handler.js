@@ -22,7 +22,7 @@ const delay = (ms) => isNumber(ms) && new Promise((resolve) => setTimeout(functi
 /**
  * Handle messages upsert
  * @param {import('@whiskeysockets/baileys').BaileysEventMap<unknown>['messages.upsert']} groupsUpdate
- */
+ */ 
 export async function handler(chatUpdate) {
   this.msgqueque = this.msgqueque || [];
   this.uptime = this.uptime || Date.now();
